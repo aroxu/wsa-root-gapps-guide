@@ -6,8 +6,6 @@ param(
     [String]$workingDirOverride
 )
 
-# If parameter is not set, we are propably in non-admin execution. We set it to the current working directory so that
-#  the working directory of the elevated execution of this script is the current working directory
 if (-not($PSBoundParameters.ContainsKey('workingDirOverride'))) {
     $workingDirOverride = (Get-Location).Path
 }

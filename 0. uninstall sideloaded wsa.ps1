@@ -15,7 +15,6 @@ function Test-Admin {
     $currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 }
 
-# If we are in a non-admin execution. Execute this script as admin
 if ((Test-Admin) -eq $false) {
     if ($shouldAssumeToBeElevated) {
         Write-Output "Administrator Permission(UAC) is required to uninstall Windows Subsystem for Android(TM)"
