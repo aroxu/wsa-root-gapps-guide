@@ -42,7 +42,7 @@
 > WSL2 환경에서 작업해야 하는 항목에는 `🐧` 이모지가 붙습니다.<br>
 
 1. [OpenGApps](https://opengapps.org/)에 접속하여 `x86_64`, `11.0`, `pico`를 순서대로 누른 후, ⬇️ (다운로드) 버튼을 눌러 GApps를 다운로드 합니다.<br>
-2. WSA를 수정중인 폴더에 `#IMAGES`, `#GAPPS` 라는 이름을 가진 폴더 2개를 생성합니다. (#을 빼서는 안됩니다.)
+2. WSA를 수정중인 폴더에 `#IMAGES`, `#GAPPS` 라는 이름을 가진 폴더 2개를 생성합니다. (#을 빼서는 안됩니다.) 이때, `modified` 폴더가 아닌, `modified` 폴더의 상위 폴더에 생성해야함을 유의하세요.
 3. 다운로드한 GApps를 `#GAPPS` 폴더에 복사합니다. 이때 압축 파일 그대로 복사해야 합니다.
 4. `Win + R` 키를 눌러 `explorer %AppData%\SideloadedWSA`를 입력한 후 `product.img`, `system.img`, `system_ext.img`, `vendor.img` 파일을 WSA를 수정중인 폴더 내의 `#IMAGES` 폴더로 복사합니다.
 5. `2._install_gapps.sh` 파일을 notepad++ 또는 VSCode 등의 편집기를 이용하여 연 뒤, 아래와 같이 수정합니다:
