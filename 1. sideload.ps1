@@ -29,6 +29,7 @@ Set-Location "$workingDirOverride"
 try {
     Write-Output "Sideloading Windows Subsystem for Android(TM)..."
     $sideloadedWSA = $env:APPDATA + '\SideloadedWSA\'
+    $sideloadedWSATools = $env:APPDATA + '\SideloadedWSA\Tools\kernel'
     $_sideloadedWSA = $env:APPDATA + '\_SideloadedWSA\'
     $appxmanifest = $sideloadedWSA + '\AppxManifest.xml'
     if ((Test-Path $sideloadedWSA) ) { Remove-Item $sideloadedWSA -Recurse -Force | Out-Null }
@@ -36,6 +37,8 @@ try {
     New-Item $_sideloadedWSA -ItemType Directory -ea 0 | Out-Null
     Copy-Item .\* $_sideloadedWSA -Recurse -Force
     Move-Item $_sideloadedWSA $sideloadedWSA
+    $source = 'https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/kernel'
+    Invoke-WebRequest -Uri $source -OutFile $sideloadedWSATools
     Add-AppxPackage -Register $appxmanifest
     Write-Output "Sideloaded Windows Subsystem for Android(TM)..."
 }
