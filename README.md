@@ -82,3 +82,14 @@
    > su
    > # 여기에 관리자 권한으로 실행할 명령어 입력
    > ```
+
+## 자주 발생하는 오류
+
+- Powershell 스크립트가 정상적으로 열리지 않거나, 실행할 수 없다고 뜹니다. 어떻게 해야 하나요?
+  > powershell의 Execution Policy와 관련된 문제입니다. 아래 명령어를 통해 잠시동안 ps1 스크립트들을 허용할 수 있습니다.
+  >
+  > ```ps1
+  > Set-ExecutionPolicy Unrestricted
+  > # 보안을 위해 작업을 전부 다 한 후 반드시 아래 명령어를 입력하세요.
+  > Set-ExecutionPolicy RemoteSigned
+  > ```
