@@ -26,6 +26,7 @@ if ((Test-Admin) -eq $false) {
 }
 Set-Location "$workingDirOverride"
 try {
+    $sideloadedWSA = $env:APPDATA + '\SideloadedWSA\'
     Write-Output "Uninstalling Windows Subsystem for Android(TM)..."
     Get-AppxPackage "MicrosoftCorporationII.WindowsSubsystemForAndroid" | Remove-AppxPackage
     if ((Test-Path $sideloadedWSA) ) { Remove-Item $sideloadedWSA -Recurse -Force | Out-Null }
