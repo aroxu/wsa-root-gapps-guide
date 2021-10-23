@@ -68,7 +68,7 @@
 10. WSA를 수정중인 폴더 내의 `#IMAGES` 폴더 안에 있는 모든 항목을 `Win + R` 키를 눌러 `explorer %AppData%\SideloadedWSA`을 실행한 후 나오는 파일 탐색기에 붙여넣습니다.
 11. adb를 준비합니다. ([https://dl.google.com/android/repository/platform-tools_r31.0.3-windows.zip](https://dl.google.com/android/repository/platform-tools_r31.0.3-windows.zip) 에서 받을 수 있습니다.)
 12. `Windows Subsystem for Android™️`를 시작하고 `Developer Option`을 켠 뒤 맨 위의 `Files`를 눌러 실행합니다.
-13. adb를 이용하여 다음 명령어를 입력합니다:
+13. `platform-tools` 압축 파일의 압축을 해제 한 뒤, 해당 경로에서 Windows Terminal을 열어 `adb connect 172.0.0.1;adb shell` 명령어를 입력한 뒤 다음 명령어를 입력합니다:
     > ```shell
     > su
     > setenforce 0 && exit
