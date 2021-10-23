@@ -66,12 +66,14 @@
    > chmod a+x 2._install_gapps.sh && ./2._install_gapps.sh
    > ```
 10. WSA를 수정중인 폴더 내의 `#IMAGES` 폴더 안에 있는 모든 항목을 `Win + R` 키를 눌러 `explorer %AppData%\SideloadedWSA`을 실행한 후 나오는 파일 탐색기에 붙여넣습니다.
-11. adb를 이용하여 다음 명령어를 입력합니다:
+11. adb를 준비합니다. ([https://dl.google.com/android/repository/platform-tools_r31.0.3-windows.zip](https://dl.google.com/android/repository/platform-tools_r31.0.3-windows.zip) 에서 받을 수 있습니다.)
+12. `Windows Subsystem for Android™️`를 시작하고 `Developer Option`을 켠 뒤 맨 위의 `Files`를 눌러 실행합니다.
+13. adb를 이용하여 다음 명령어를 입력합니다:
     > ```shell
     > su
     > setenforce 0 && exit
     > ```
-12. 시작메뉴에서 `Windows Subsystem for Android™️`을 클릭하여 실행 한 뒤, `파일` 항목을 눌러서 정상적으로 켜지나 테스트<br>
+14. 시작메뉴에서 `Play 스토어`를 클릭하여 실행 한 뒤, 로그인을 합니다. 이 과정에서 오류가 발생할 수도 있으니, 앱을 껐다 켠 후 재로그인을 하면 됩니다.<br>
 
 ## 4. Root
 
