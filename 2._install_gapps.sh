@@ -113,11 +113,11 @@ mkdir misc
 cd "$MiscRoot"
 mkdir prop
 cd "$MiscRoot/prop"
-wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/build_product.prop
-wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/build_system.prop
-wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/build_system_ext.prop
-wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/build_vendor.prop
-wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/build_vendor_odm.prop
+wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/x64/build_product.prop
+wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/x64/build_system.prop
+wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/x64/build_system_ext.prop
+wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/x64/build_vendor.prop
+wget https://raw.githubusercontent.com/aroxu/WSAGAScript/main/misc/prop/x64/build_vendor_odm.prop
 cd "$Root"
 
 echo "Copying build.prop for each image"
