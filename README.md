@@ -11,6 +11,7 @@
 ### 사전 고지
 
 - GApps 설치 부분 스크립트는 [ADeltaX](https://github.com/ADeltaX)의 [WSAGAScript](https://github.com/ADeltaX/WSAGAScript)를 참고하였습니다.
+- 수정된 커널 이미지는 GPLv2 라이센스를 사용하는 [LSPosed/WSA-Kernel-SU](https://github.com/LSPosed/WSA-Kernel-SU/tree/kernel)를 사용하여 빌드하였습니다.
 - Sideload 작업 시, `%AppData%\SideloadedWSA` 폴더를 삭제한 후 재생성합니다. 해당 경로에 존재하는 파일을 지우므로 만약 해당 경로에 사용자의 파일이 있다면 백업을 하거나, 다른 경로로 이동해주세요.
 - Sideload 작업 이후 `%AppData%\SideloadedWSA` 폴더를 삭제할 경우 `Windows Subsystem for Android™️`가 정상적으로 작동하지 않을 수 있습니다.
 - ps1 파일을 `실행`할 때는 `우클릭을 한 뒤 Powershell에서 실행` 하는 것을 기본으로 합니다.
