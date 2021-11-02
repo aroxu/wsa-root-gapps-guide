@@ -10,7 +10,7 @@
 
 ### Pre-notice
 
-- GApps installation script part is referenced from [ADeltaX](https://github.com/ADeltaX)의 [WSAGAScript](https://github.com/ADeltaX/WSAGAScript).
+- GApps installation script part is referenced from [WSAGAScript](https://github.com/ADeltaX/WSAGAScript) by [ADeltaX](https://github.com/ADeltaX).
 - For modified kernel, I used and built [LSPosed/WSA-Kernel-SU](https://github.com/LSPosed/WSA-Kernel-SU/tree/kernel) which license is GPLv2.
 - While working on Sideload, It regenerates `%AppData%\SideloadedWSA` folder. It deletes files which exists in the directory, so if there is a file in the directory, please backup or move it to another place.
 - After working on Sideload, If you delete `%AppData%\SideloadedWSA` folder `Windows Subsystem for Android™️` will not work as intended.
