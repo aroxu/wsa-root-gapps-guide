@@ -1,5 +1,7 @@
 # WSA(Windows Subsystem for Android™️) GApps + Root 가이드
 
+[English Translation](./ENG_README.md)
+
 ### 최소 요구 조건
 
 - Windows 11 64bit (x86_64)<br>
