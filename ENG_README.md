@@ -86,8 +86,8 @@
 
 ## Frequently happening Errors
 
-- Powershell script does not run / it cannot be run. What should I do?
-  > It related with Execution Policy problem with PowerShell. You can allow ps1 scrips for a moment with this following command:
+- Powershell script does not run / cannot be run. What should I do?
+  > It related with Execution Policy problem with PowerShell. You can allow ps1 scripts for a moment with this following command:
   >
   > ```ps1
   > Set-ExecutionPolicy Unrestricted
