@@ -68,6 +68,12 @@
    > ```bash
    > chmod a+x 2._install_gapps.sh && ./2._install_gapps.sh
    > ```
+   이때, `/bin/sh^M: bad interpreter: No such file or directory` 오류가 발생하는 경우에는 `vim`을 이용해 수정합니다:
+   >```bash
+   > vi 2._install_gapps.sh
+   > :set fileformat=unix
+   > :wq
+   >```
 10. WSA를 수정 중인 폴더 내의 `#IMAGES` 폴더 안에 있는 모든 항목을 `Win + R` 키를 눌러 `explorer %AppData%\SideloadedWSA`을 실행한 후 나오는 파일 탐색기에 붙여 넣습니다.
 11. adb를 준비합니다. ([https://dl.google.com/android/repository/platform-tools_r31.0.3-windows.zip](https://dl.google.com/android/repository/platform-tools_r31.0.3-windows.zip)에서 받을 수 있습니다.)
 12. `Windows Subsystem for Android™️`를 시작하고 `Developer Option`을 켠 뒤, 맨 위의 `Files`를 눌러 실행합니다.
