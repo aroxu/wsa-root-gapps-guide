@@ -36,7 +36,7 @@
 2.  `wsa.msixbundle` 파일을 압축 프로그램으로 열거나, 파일의 확장자를 zip으로 변경합니다.<br>
 3.  `wsa.msixbundle` 파일 내부의 파일 중에서 이름의 형태가 `WsaPackage_버전_Release-Nightly` 형태를 띄는 msix 파일을 현재 폴더에 복사하거나 압축 해제합니다.<br>
 4.  복사한 msix 파일의 이름을 `modified.zip`으로 변경 후 압축 해제합니다.<br>
-5.  해제된 폴더 안의 `AppxMetadata` 폴더와 `AppxSignature.p7x`, `appxblockmap.xml`, `[content_types]` 파일들을 삭제합니다.<br>
+5.  해제된 폴더 안의 `AppxMetadata` 폴더와 `[Content_Types].xml`, `AppxBlockMap.xml`, `AppxSignature.p7x` 파일들을 삭제합니다.<br>
 6.  첨부된 `1. sideload.ps1` 파일을 `modified` 폴더 안에 복사한 후 실행합니다.<br>
 
 ## 3. GApps 설치
